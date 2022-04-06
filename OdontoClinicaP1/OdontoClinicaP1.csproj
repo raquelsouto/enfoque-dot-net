@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="interfaces\**" />
+    <Compile Remove="Procedures\**" />
+    <EmbeddedResource Remove="interfaces\**" />
+    <EmbeddedResource Remove="Procedures\**" />
+    <None Remove="interfaces\**" />
+    <None Remove="Procedures\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EO.WebBrowser" Version="22.0.68" />
+  </ItemGroup>
+
+</Project>
